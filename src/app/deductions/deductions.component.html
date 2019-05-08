@@ -1,20 +1,9 @@
 <div style="background-image: url('../../assets/images/edit_deductions.jpg');background-size: contain; margin-left: 100px;">
   <div class="container" >
   
-    <form>
         <input style="margin-left:350px; margin-top: 295px; width:205px; position: fixed;font-size: 12px;"
-         type="text" name="amount" (onchange)="onEditDeductions()" />
-    </form>
-    <div >{{userMessage}}</div>
+         type="text" [(ngModel)]="deductionsAmount" (keydown.Tab)="onEditDeductions()"  />
+
+        <p style="margin-left:340px; margin-top: 322px; width:260px; position: fixed; font-size: 10.81111px;color: red;"> <strong>{{userMessage}}</strong> </p>
   </div>
 </div>
-
-
-<!-- 
-<div style="background-image: url('../../assets/images/Mobile.jpg');background-size: contain; margin-left: 100px;">
-  <div class="container" style="margin-top:20px;">
-    <img style="width: 270px;height: 470px;margin-left: 319px; margin-top:75px;" src='../../assets/images/pay2.jpg'/>
-  
-
-  </div>
-</div> -->

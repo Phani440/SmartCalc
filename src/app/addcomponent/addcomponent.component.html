@@ -1,0 +1,17 @@
+<div style="background-image: url('../../assets/images/Mobile.jpg');background-size: contain; margin-left: 100px;">
+  <div class="container" style="margin-top:20px;">
+    <img style="width: 275px;height: 150px;margin-left: 315px; margin-top:75px;" src="assets/images/add-1.jpg" />
+
+
+    <select name="deductionCode" [(ngModel)]=" deductionCode" placeholder= "Please Select" class="form-control" style="width:240px; padding-top:10px; margin-left:325px; ">
+      <option value =' '>Please Select</option>
+      <option value='401k'>401K</option>
+      <option value='HSA'>HSA</option>
+      <option value='DentalCare'>Dental Care</option>
+    </select>
+
+    <img style="width: 275px;height: 140px;margin-left: 318px; cursor: pointer;" src="assets/images/add-2.jpg"  [routerLink]="['/deductions','code',deductionCode]"/>
+    <img style="width: 275px;height: 140px;margin-left: 318px; cursor: pointer;" src="assets/images/add-3.jpg" />
+    
+  </div>
+</div>

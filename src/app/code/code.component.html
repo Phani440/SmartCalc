@@ -1,0 +1,29 @@
+<!-- <div style="background-image: url('../../assets/images/edit_deductions.jpg');background-size: contain; margin-left: 100px;">
+  <div class="container" >
+  
+        <input style="margin-left:350px; margin-top: 295px; width:205px; position: fixed;font-size: 12px;"
+         type="text" [(ngModel)]="deductionsAmount" (keydown.Tab)="onEditDeductions()"  />
+
+        <p style="margin-left:340px; margin-top: 322px; width:260px; position: fixed; font-size: 10.81111px;color: red;"> <strong>{{userMessage}}</strong> </p>
+  </div>
+</div> -->
+
+
+<div style="background-image: url('../../assets/images/Mobile.jpg');background-size: contain; margin-left: 100px;">
+  <div class="container" >
+      <input style=" margin-top: 215px; margin-left: 350px; width:215px; position: fixed;font-size: 12px;"
+          type="text" [(ngModel)]=" deductionsCode"  name="code" disabled/>
+      <input style=" margin-top: 265px; margin-left: 350px; width:215px; position: fixed;font-size: 12px;"
+          type="text" name="amount" [(ngModel)]=" deductionsAmount"  (keydown.Tab)="onAddDeductions()" />
+      <p style="margin-left: 350px;margin-top: 290px; width:260px; position: fixed; font-size: 9.81111px;color: red;"> 
+              <strong>{{userMessage}}</strong> </p>
+
+
+    <img style="width: 275px;height: 150px;margin-left: 315px;margin-top:95px;"
+           src="assets/images/code-1.jpg"/>
+    <img style="width: 275.20px;height: 60px;margin-left: 315px;"
+           src="assets/images/code-2.jpg"/>
+    <img style="width: 275px;height: 260px;margin-left: 315px;"
+           src="assets/images/code-3.jpg"/>        
+  </div>
+</div>
