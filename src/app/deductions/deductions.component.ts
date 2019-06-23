@@ -28,7 +28,7 @@ export class DeductionsComponent implements OnInit {
         this.userMessage = "Your additional tax savings will be $ " +Math.round(((this.deductionsAmount-30) *0.33*12)) +".";
     }
     else  if( this.deductionsAmount< 30 && this.deductionsAmount> 0 ){
-       this.userMessage = "You will be paying $ "+Math.round(((30-this.deductionsAmount) *0.33*12)).toFixed(3) +" in taxes this year.";   
+       this.userMessage = "You will be paying $ "+Math.round(((30-this.deductionsAmount) *0.33*12))+" more in taxes this year.";   
        // this.userMessage = "You will be paying $ "+(30-this.deductionsAmount) *0.33*12 +" in taxes this year.";   
       }
 
