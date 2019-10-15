@@ -25,11 +25,13 @@ export class DeductionsComponent implements OnInit {
     console.log("inside edit deductions");
     this.edited = true;
     if( this.deductionsAmount> 30 ){
-        this.userMessage = "Your additional tax savings will be $ " +Math.round(((this.deductionsAmount-30) *0.33*12)) +".";
+       // this.userMessage = "Your additional tax savings will be $ " +Math.round(((this.deductionsAmount-30) *0.33*12)) +".";
+        this.userMessage = "Projected increase in Retirement savings is  $" +Math.round(((this.deductionsAmount-30) *0.33*12)) +"K.";
+
     }
     else  if( this.deductionsAmount< 30 && this.deductionsAmount> 0 ){
-       this.userMessage = "You will be paying $ "+Math.round(((30-this.deductionsAmount) *0.33*12))+" more in taxes this year.";   
-       // this.userMessage = "You will be paying $ "+(30-this.deductionsAmount) *0.33*12 +" in taxes this year.";   
+       this.userMessage = "Projected decrease in Retirement savings is  $"+Math.round(((30-this.deductionsAmount) *0.33*12))+"K.";   
+       // this.userMessage = "You will be paying $ "+(30-this.deductionsAmount) *0.33*12 +" in taxes this year";   
       }
 
   }

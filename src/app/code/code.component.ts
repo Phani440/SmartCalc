@@ -35,7 +35,9 @@ export class CodeComponent implements OnInit {
     console.log("Inside code component "+this.deductionsAmount);
 
     if( this.deductionsAmount> 0 ){
-      this.userMessage = "Your additional tax savings will be $ " +Math.round(((this.deductionsAmount) *0.33*12)) +".";
+    //  this.userMessage = "Your additional tax savings will be $ " +Math.round(((this.deductionsAmount) *0.33*12)) +".";
+      this.userMessage = "Projected increase in Retirement savings is $" +Math.round(((this.deductionsAmount) *0.33*12))+"K." ;
+
   }
   }
 
